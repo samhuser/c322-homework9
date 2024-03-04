@@ -1,4 +1,3 @@
-123456,999.99,Fender,Stratocaster,electric,Maple,Indian Rosewood
-789012,1499.99,Gibson,Les Paul,electric,Mahogany,Maple
+
 123456,999.99,Fender,Stratocaster,electric,Maple,Indian Rosewood
 789012,1499.99,Gibson,Les Paul,electric,Mahogany,Maple

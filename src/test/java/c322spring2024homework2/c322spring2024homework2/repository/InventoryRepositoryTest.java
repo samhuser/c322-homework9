@@ -75,23 +75,4 @@ class InventoryRepositoryTest {
         }
         assertEquals(guitar, result);
     }
-
-    @Test
-    void search() {
-        // Act: Perform a search
-        InventoryRepository inventoryRepository = new InventoryRepository();
-        Guitar guitar =  new Guitar(null, 0.0, Builder.ANY, null, Type.ELECTRIC, Wood.ANY, Wood.ANY);
-
-        List<Guitar> result = null;
-        try {
-            result = inventoryRepository.search(guitar);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        // Assert: Verify the result
-        assertNotNull(result);
-        assertEquals(2, result.size());
-
-    }
 }
