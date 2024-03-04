@@ -1,0 +1,3 @@
+123456,999.99,Fender,Stratocaster,electric,Maple,Indian Rosewood
+789012,1499.99,Gibson,Les Paul,electric,Mahogany,Maple
+A123,1500.0,Fender,Stratocaster,electric,Alder,Maple
