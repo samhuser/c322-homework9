@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>c322-spring2024-homework2</groupId>
-	<artifactId>c322-spring2024-homework2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>guitars</artifactId>
+	<version>0.0.1</version>
 	<name>c322-spring2024-homework2</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
