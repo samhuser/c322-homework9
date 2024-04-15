@@ -8,16 +8,18 @@ import c322spring2024homework2.c322spring2024homework2.repository.InventoryRepos
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.List;
 
 @RestController
 @CrossOrigin
-
 public class InventoryController {
     Logger logger = LoggerFactory.getLogger(Logger.class);
-
     InventoryRepository inventoryRepository = new InventoryRepository();
     @GetMapping("/search")
     public List<Guitar> search(@RequestParam (required = false) String serialNumber, @RequestParam (required = false) String price,

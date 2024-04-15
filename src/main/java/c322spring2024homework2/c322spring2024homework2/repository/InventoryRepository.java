@@ -61,7 +61,6 @@ public class InventoryRepository {
         List<String> data = Files.readAllLines(path);
         for (String line: data){
             String[] words = line.split(",");
-            System.out.println(words);
             Guitar guitar = new Guitar(words[0],Double.parseDouble(words[1]),(words[2].equals("Unspecified")) ? Builder.valueOf("ANY"):Builder.valueOf(words[2].toUpperCase()), words[3],  (words[4].equals("unspecified")) ? Type.ANY:Type.valueOf(words[4].toUpperCase()), (words[5].equals("unspecified")) ? Wood.ANY : Wood.valueOf(words[5].toUpperCase().replace(' ', '_')), (words[6].equals("unspecified")) ? Wood.ANY:Wood.valueOf(words[6].toUpperCase().replace(' ', '_')));
             result.add(guitar);
             if (searchGuitar.getSerialNumber() == null){
