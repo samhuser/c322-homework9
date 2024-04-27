@@ -6,10 +6,8 @@ import c322spring2024homework2.c322spring2024homework2.model.Type;
 import c322spring2024homework2.c322spring2024homework2.model.Wood;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -17,13 +15,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@Component
-public class InventoryRepository {
+public class InventoryFileRepository {
     Logger logger = LoggerFactory.getLogger(Logger.class);
 
     private static final String NEW_LINE = System.lineSeparator();

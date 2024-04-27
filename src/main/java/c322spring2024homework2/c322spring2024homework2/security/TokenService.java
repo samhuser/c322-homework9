@@ -18,7 +18,7 @@ public class TokenService {
 
     public TokenService(JwtEncoder encoder){this.encoder = encoder;}
 
-    public String generateToke(Authentication authentication){
+    public String generateToken(Authentication authentication){
         Instant now = Instant.now();
         String scope = authentication
                 .getAuthorities().stream()

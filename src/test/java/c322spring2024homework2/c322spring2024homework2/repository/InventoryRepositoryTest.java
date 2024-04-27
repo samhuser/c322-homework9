@@ -7,10 +7,6 @@ import c322spring2024homework2.c322spring2024homework2.model.Wood;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,7 +14,7 @@ class InventoryRepositoryTest {
 
     @Test
     void addGuitar() {
-        InventoryRepository inventoryRepository = new InventoryRepository();
+        InventoryFileRepository inventoryRepository = new InventoryFileRepository();
         // Create a test guitar
         Guitar testGuitar = new Guitar(
                 "123456",
@@ -58,7 +54,7 @@ class InventoryRepositoryTest {
 
     @Test
     void getGuitar() {
-        InventoryRepository inventoryRepository = new InventoryRepository();
+        InventoryFileRepository inventoryRepository = new InventoryFileRepository();
         Guitar guitar = new Guitar(
                 "789012",
                 1499.99,

@@ -1,7 +1,5 @@
 package c322spring2024homework2.c322spring2024homework2.model;
 
-import c322spring2024homework2.c322spring2024homework2.repository.InventoryRepository;
-
 public enum Wood {
     INDIAN_ROSEWOOD, BRAZILIAN_ROSEWOOD, MAHOGANY, MAPLE, COCOBOLO, CEDAR, ADIRONDACK, ALDER, SITKA, ANY;
 

@@ -1,8 +1,15 @@
 package c322spring2024homework2.c322spring2024homework2.model;
 
-import java.util.Objects;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+import java.util.Objects;
+@Entity
+@Table(schema = "guitars")
 public class Guitar {
+
+    @Id
     String serialNumber;
     double price;
     Builder builder;
@@ -19,6 +26,10 @@ public class Guitar {
         this.type = type;
         this.backwood = backwood;
         this.topwood = topwood;
+    }
+
+    public Guitar() {
+
     }
 
     public String getSerialNumber(){
